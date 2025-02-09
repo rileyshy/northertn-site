@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #333, #111);
+    color: #ddd;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+.small-logo {
+    width: 75px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    vertical-align: middle;
+}
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2.5em;
+    margin: 0;
+    padding-top: 10px;
+}
+.store-container {
+    max-width: 1200px; /* Increase the max-width to fit more products in a row */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure products are spaced evenly */
+}
+.product {
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    flex: 1 1 calc(33% - 10px); /* Ensure three products fit in a row */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    height: auto; /* Allow height to adjust based on content */
+}
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto; /* Allow the height to adjust based on the image */
+    max-height: 150px; /* Set a maximum height for the images */
+    object-fit: cover; /* Ensure the full image is visible */
+    display: block; /* Ensure the images are displayed */
+}
+.product p {
+    margin-top: 10px; /* Add some space between the image and the text */
+    flex-grow: 1; /* Allow the text to grow and take available space */
+}
+.paypal-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #0070ba, #003087);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+.paypal-button:hover {
+    background: linear-gradient(to right, #005ea6, #002d72);
+}
+.purchase-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #0070ba, #003087);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+.purchase-button:hover {
+    background: linear-gradient(to right, #005ea6, #002d72);
+}
+footer {
+    margin-top: 10px;
+    color: #aaa;
+}
+footer a {
+    color: #ff4500;
+    text-decoration: none;
+}
+nav {
+    margin-bottom: 20px;
+}
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+nav a.active {
+    color: #ff4500;
+}
+.tos-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.tos-container h1 {
+    color: #ff4500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.tos-container ol {
+    padding-left: 20px;
+}
+.tos-container li {
+    margin-bottom: 10px;
+}
+.tos-section {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+.tos-section ol {
+    padding-left: 20px;
+}
+.tos-section li {
+    margin-bottom: 10px;
+    color: #ddd;
+}
+.tos-section a {
+    color: #ff4500;
+    text-decoration: none;
+}
+.tos-section a:hover {
+    text-decoration: underline;
+}
